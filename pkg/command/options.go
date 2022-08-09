@@ -22,7 +22,7 @@ type Options struct {
 	SslRootCert                  string `long:"ssl-rootcert" description:"SSL certificate authority file"`
 	SslCert                      string `long:"ssl-cert" description:"SSL client certificate file"`
 	SslKey                       string `long:"ssl-key" description:"SSL client certificate key file"`
-	HTTPHost                     string `long:"bind" description:"HTTP server host" default:"localhost"`
+	HTTPHost                     string `long:"bind" description:"HTTP server host" default:"0.0.0.0"`
 	HTTPPort                     uint   `long:"listen" description:"HTTP server listen port" default:"8081"`
 	AuthUser                     string `long:"auth-user" description:"HTTP basic auth user"`
 	AuthPass                     string `long:"auth-pass" description:"HTTP basic auth password"`
